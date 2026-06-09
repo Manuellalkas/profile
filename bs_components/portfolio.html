@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfólio | Manuella Alkas</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        :root {
+            --vinho: #7B1E3A;
+            --vinho-hover: #61172e;
+        }
+
+        body {
+            background: #f8f9fa;
+        }
+
+        .bg-vinho {
+            background: var(--vinho);
+        }
+
+        .text-vinho {
+            color: var(--vinho);
+        }
+
+        .navbar-brand {
+            color: #d8a1b0 !important;
+        }
+
+        .card {
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .carousel-item img {
+            height: 550px;
+            width: 100%;
+            object-fit: contain;
+            background: #111;
+            cursor: pointer;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, .6);
+            border-radius: 50%;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+
+                Manuella Alkas
+
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active" href="portfolio.html">
+
+                            Portfólio
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="contato.html">
+
+                            Contato
+
+                        </a>
+
+                    </li>
+
+                    <!-- DROPDOWN -->
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+
+                            Mais
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+
+                                <a class="dropdown-item" href="index.html#sobre">
+                                    Sobre Mim
+                                </a>
+
+                                <a class="dropdown-item" href="index.html#tecnologias">
+                                    Tecnologias
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <hr class="dropdown-divider">
+
+                            </li>
+
+                            <li>
+
+                                <a class="dropdown-item" href="contato.html">
+
+                                    Fale Comigo
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- HEADER -->
+
+    <section class="bg-vinho text-white py-5 text-center">
+
+        <div class="container">
+
+            <h1 class="display-5 fw-bold">
+
+                Meu Portfólio
+
+            </h1>
+
+            <p class="lead">
+
+                Projetos desenvolvidos durante minha trajetória
+                no curso Técnico em Desenvolvimento de Sistemas.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <div class="container py-5">
+
+        <div class="card shadow-sm border-0 mb-5">
+
+            <div class="card-body text-center p-5">
+
+                <h2 class="fw-bold text-vinho">
+
+                    Projetos Acadêmicos
+
+                </h2>
+
+                <p class="text-muted">
+
+                    Clique em qualquer projeto para visualizar os detalhes.
+
+                </p>
+
+            </div>
+
+        </div>
+        <!-- CARROSSEL -->
+
+        <div id="carouselProjetos" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel"
+            data-bs-interval="3000">
+
+            <!-- INDICADORES -->
+
+            <div class="carousel-indicators">
+
+                <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="0" class="active"></button>
+
+                <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="1"></button>
+
+                <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="2"></button>
+
+                <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="3"></button>
+
+                <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="4"></button>
+
+                <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="5"></button>
+
+                <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="6"></button>
+
+                <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="7"></button>
+
+                <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="8"></button>
+
+                <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="9"></button>
+
+            </div>
+
+            <!-- IMAGENS -->
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="projeto1.png" alt="Projeto 1" data-bs-toggle="modal" data-bs-target="#m1">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="projeto2.png" alt="Projeto 2" data-bs-toggle="modal" data-bs-target="#m2">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="projeto3.png" alt="Projeto 3" data-bs-toggle="modal" data-bs-target="#m3">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="projeto4.png" alt="Projeto 4" data-bs-toggle="modal" data-bs-target="#m4">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="projeto5.png" alt="Projeto 5" data-bs-toggle="modal" data-bs-target="#m5">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="projeto6.png" alt="Projeto 6" data-bs-toggle="modal" data-bs-target="#m6">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="projeto7.png" alt="Projeto 7" data-bs-toggle="modal" data-bs-target="#m7">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="projeto8.png" alt="Projeto 8" data-bs-toggle="modal" data-bs-target="#m8">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="projeto9.png" alt="Projeto 9" data-bs-toggle="modal" data-bs-target="#m9">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="projeto10.png" alt="Projeto 10" data-bs-toggle="modal" data-bs-target="#m10">
+                </div>
+
+            </div>
+
+            <!-- SETA ESQUERDA -->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+            <!-- SETA DIREITA -->
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+    </div>
+    <!-- ================= MODAIS ================= -->
+
+    <!-- PROJETO 1 -->
+    <div class="modal fade" id="m1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Componentes Bootstrap</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Interface desenvolvida utilizando componentes Bootstrap como Navbar,
+                    Cards, Botões, Badges e Grid System, com foco em responsividade.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJETO 2 -->
+    <div class="modal fade" id="m2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Grid Layout</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Projeto voltado para organização de conteúdo utilizando o Grid System
+                    do Bootstrap e adaptação para diferentes dispositivos.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJETO 3 -->
+    <div class="modal fade" id="m3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">React useState</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Exercício de gerenciamento de estado utilizando o Hook useState
+                    para atualização dinâmica da interface.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJETO 4 -->
+    <div class="modal fade" id="m4" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">CRUD React</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Sistema CRUD com operações de cadastro, edição, exclusão
+                    e listagem de registros utilizando React.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJETO 5 -->
+    <div class="modal fade" id="m5" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Swiper JS</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Desenvolvimento de carrosséis modernos utilizando a biblioteca
+                    Swiper JS para navegação de conteúdo.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJETO 6 -->
+    <div class="modal fade" id="m6" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Sistema Responsivo</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Aplicação desenvolvida com foco em responsividade,
+                    acessibilidade e experiência do usuário.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJETO 7 -->
+    <div class="modal fade" id="m7" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Métodos HTTP</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Estudo prático dos métodos GET, POST, PUT e DELETE
+                    utilizados em APIs REST.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJETO 8 -->
+    <div class="modal fade" id="m8" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Carousel Bootstrap</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Implementação de carrossel utilizando Bootstrap com indicadores,
+                    setas de navegação e imagens responsivas.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJETO 9 -->
+    <div class="modal fade" id="m9" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto Front-End</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Projeto acadêmico voltado para desenvolvimento de interfaces
+                    modernas utilizando HTML, CSS e Bootstrap.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJETO 10 -->
+    <div class="modal fade" id="m10" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto Integrador</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Projeto final reunindo os conhecimentos adquiridos em
+                    desenvolvimento web, banco de dados e design de interfaces.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-dark text-white py-4 mt-5">
+
+        <div class="container text-center">
+
+            <h5 class="mb-2">
+                Manuella Alkas
+            </h5>
+
+            <p class="mb-1">
+                Estudante de Desenvolvimento de Sistemas
+            </p>
+
+            <p class="mb-0">
+                © 2026 Todos os direitos reservados
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
